@@ -1,0 +1,64 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.state,
+.states {
+    height: 100%;
+    padding: 5px;
+}
+
+div.connecting-icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+div.connecting-icon-container-inner {
+    max-width: 100%;
+    text-align: center;
+    animation: bounce .875s ease infinite;
+}
+
+div.connecting-icon-container-inner.no-bounce {
+    max-width: 100%;
+    text-align: center;
+    animation: none;
+}
+
+div.connecting-icon-container-inner svg {
+    color: white;
+    height: 100%;
+    margin: 0;
+}
+
+.connect-text {
+    font-size: 56px;
+    margin: 10px;
+    color: white
+}
+
+.big-icon {
+    color: white;
+    font-size: 350px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(100%);
+    }
+    50% {
+        transform: scale(90%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
