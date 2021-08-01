@@ -71,6 +71,12 @@ div.connecting-icon-container-inner svg {
     pointer-events: none;
 }
 
+.gametitle {
+    text-align: center;
+    position: relative;
+    top: 10%;
+}
+
 @keyframes bounce {
     0% {
         transform: scale(100%);
