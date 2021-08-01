@@ -50,9 +50,19 @@ function getRandomSplash() {
 }
 
 // Function for applying a random splash to the bouncy splash display
-function setSplashText() {
-    var splash = getRandomSplash();
-    $("#splash").html(splash);
-    return splash;
+function setSplashText(forceDev) {
+    if (forceDev == 1) {
+        var splash = "<img src=\"dev.png\" alt=\"dev\"/ class=\"dev\">";
+        $("#splash").html(splash);
+        return splash;
+    } else if (forceDev == 2) {
+        var splash = "<img src=\"aids.png\" alt=\"discord moment\"/ class=\"dev\">";
+        $("#splash").html(splash);
+        return splash;
+    } else {
+        var splash = getRandomSplash();
+        $("#splash").html(splash);
+        return splash;
+    }
 }
 setSplashText();

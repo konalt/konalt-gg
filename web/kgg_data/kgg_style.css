@@ -60,8 +60,16 @@ div.connecting-icon-container-inner svg {
 .splash {
     animation: splashtext .75s ease infinite;
     color: white;
-    display: inline-block;
     transform: rotate(-20deg);
+    text-align: center;
+    position: relative;
+    top: 4%;
+    left: 10%;
+    color: yellow;
+}
+
+.dev {
+    max-width: 250px;
 }
 
 .hidden-state {
