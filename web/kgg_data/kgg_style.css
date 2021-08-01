@@ -68,6 +68,16 @@ div.connecting-icon-container-inner svg {
     color: yellow;
 }
 
+.mobtitle {
+    font-size: 255px;
+    color: white;
+}
+
+.mobsubtitle {
+    font-size: 100px;
+    color: white;
+}
+
 .state.play {
     position: relative;
 }
