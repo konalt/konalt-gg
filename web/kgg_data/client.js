@@ -12,13 +12,13 @@ function state(stateID) {
     });
     switch (stateID) {
         case "con":
-            $("connecting_state").removeClass("hidden-state");
+            $("#state_connecting").removeClass("hidden-state");
             break;
         case "game":
-            $("play_state").removeClass("hidden-state");
+            $("#state_play").removeClass("hidden-state");
             break;
         case "admin":
-            $("admin_state").removeClass("hidden-state");
+            $("#admin_state").removeClass("hidden-state");
             break;
         default:
             break;
