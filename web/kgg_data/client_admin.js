@@ -1,3 +1,12 @@
+// Function for getting client IP.
+$.ajax({
+    type: "GET",
+    url: "https://konalt.us.to/api/ip",
+    success: function(response) {
+        return response.ip;
+    }
+});
+
 // Function for changing states.
 function state(stateID) {
     $('#states').children().each(function() {
@@ -36,7 +45,7 @@ function getRandomSplash() {
         success: function(response) {
             console.log("Got splash texts epicly");
             // Choose random one and return it.
-            var splash = response.splashes[Math.floor(Math.random() * response.splashes.length)];
+            var splash = response.splashes[Math.floor(Math.random() * response.splashes.length)].replace("__IPADDR__", "");
             toReturn = splash;
         },
         error: function() {
