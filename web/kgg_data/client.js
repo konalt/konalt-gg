@@ -5,6 +5,26 @@ socket.on("connection_ack", () => {
     console.log("Connected to server!");
 });
 
+// Function for changing states.
+function state(stateID) {
+    $('#states').children().each(function() {
+        $(this).addClass("hidden-state");
+    });
+    switch (stateID) {
+        case "con":
+            $("connecting_state").removeClass("hidden-state");
+            break;
+        case "game":
+            $("play_state").removeClass("hidden-state");
+            break;
+        case "admin":
+            $("admin_state").removeClass("hidden-state");
+            break;
+        default:
+            break;
+    }
+}
+
 // This function is for the future, when we'll have splash text
 // Yes, this is deprecated. No, I don't care.
 function getRandomSplash() {
