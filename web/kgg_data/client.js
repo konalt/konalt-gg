@@ -90,7 +90,7 @@ if (isMobile() || params.get("forcemobile") == "true") {
     // On mobile browser, show "Sorry :(" page
     state("mobile");
     // Update mobile info
-    $("#mobinfo").html("UserAgent: " + navigator.userAgent + "<br>Forced Display: " + (params.get("forcemobile") == "true" ? "FORCED" : "NOT_FORCED"));
+    $("#mobinfo").html("UserAgent: " + navigator.userAgent + "<br><br>Forced Display: " + (params.get("forcemobile") == "true" ? "FORCED" : "NOT_FORCED"));
 } else {
     initConnection();
 }
