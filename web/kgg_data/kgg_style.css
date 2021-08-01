@@ -81,7 +81,8 @@ div.connecting-icon-container-inner svg {
 .mobinfo {
     position: absolute;
     text-align: center;
-    bottom: 0px;
+    top: 0px;
+    color: white;
 }
 
 .state.play {
