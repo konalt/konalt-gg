@@ -89,6 +89,8 @@ function isMobile() {
 if (isMobile() || params.get("forcemobile") == "true") {
     // On mobile browser, show "Sorry :(" page
     state("mobile");
+    // Update mobile info
+    $("#mobinfo").text("UserAgent: " + navigator.userAgent);
 } else {
     initConnection();
 }
