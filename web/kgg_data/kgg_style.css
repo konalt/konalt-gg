@@ -7,20 +7,6 @@ body {
     overflow: hidden;
 }
 
-body {
-    background-color: green;
-}
-
-.admin .states,
-.admin .state {
-    height: 100%;
-    width: 90%;
-    padding: 5px;
-    position: absolute;
-    left: 10%;
-    background-color: #2b2b2b;
-}
-
 .state,
 .states {
     height: 100%;
@@ -76,10 +62,6 @@ div.connecting-icon-container-inner svg {
     top: 4%;
     left: 10%;
     color: yellow;
-}
-
-.admin.splash {
-    left: 15%;
 }
 
 .mobtitle {
