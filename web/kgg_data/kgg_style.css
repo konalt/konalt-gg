@@ -59,6 +59,7 @@ div.connecting-icon-container-inner svg {
 
 .splash {
     animation: splashtext 2s ease infinite;
+    color: white;
 }
 
 .hidden-state {
@@ -82,12 +83,12 @@ div.connecting-icon-container-inner svg {
 
 @keyframes splashtext {
     0% {
-        transform: scale(100%) rotate(20);
+        transform: scale(100%) rotate(20deg);
     }
     50% {
-        transform: scale(90%) rotate(-20);
+        transform: scale(90%) rotate(-20deg);
     }
     100% {
-        transform: scale(100%) rotate(20);
+        transform: scale(100%) rotate(20deg);
     }
 }
