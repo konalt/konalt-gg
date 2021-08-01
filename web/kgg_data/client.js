@@ -48,3 +48,11 @@ function getRandomSplash() {
     });
     return toReturn;
 }
+
+// Function for applying a random splash to the bouncy splash display
+function setSplashText() {
+    var splash = getRandomSplash();
+    $("#splash").html(splash);
+    return splash;
+}
+setSplashText();
