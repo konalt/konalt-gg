@@ -9,9 +9,15 @@ const express = require("express");
 // Grab the config
 const config = JSON.parse(fs.readFileSync("./serverconfig.json").toString());
 
+// HTTPS certificates. No, you can't have them.
+const options = {
+    key: fs.readFileSync('C:\\Certbot\\live\\konalt.us.to\\privkey.pem'),
+    cert: fs.readFileSync('C:\\Certbot\\live\\konalt.us.to\\fullchain.pem')
+};
+
 // Actually make the server
 const app = express();
-const server = https.Server(app);
+const server = https.createServer(options, app);
 const io = sio(server);
 
 // Server listens on config.port OR if -port is included, use that

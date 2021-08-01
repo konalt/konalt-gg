@@ -3,6 +3,11 @@ var socket = io.connect("https://konalt.us.to:22649");
 // On connection acknowledgement event, log it to console. I'll deal with it later
 socket.on("connection_ack", () => {
     console.log("Connected to server!");
+    // Add an extra 2 seconds to the connect screen
+    // I put lots of effort in, okay?
+    setTimeout(() => {
+        state("game");
+    }, 2000);
 });
 
 // Function for changing states.
