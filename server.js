@@ -18,7 +18,12 @@ const options = {
 // Actually make the server
 const app = express();
 const server = https.createServer(options, app);
-const io = sio(server);
+const io = sio(server, {
+    cors: {
+        origin: "https://konalt.us.to",
+        methods: ["GET", "POST"]
+    }
+});
 
 // Server listens on config.port OR if -port is included, use that
 var usingPort = process.argv.includes("-port") ? process.argv[process.argv.indexOf("-port") + 1] : config.port
